@@ -1,19 +1,10 @@
 import React from "react";
-import {
-  Button,
-  Col,
-  Image,
-  List,
-  Row,
-  Space,
-  Typography,
-  Divider,
-} from "antd";
-import Label from "../../components/Label";
+import { Button, Typography } from "antd";
+
 import { blogs } from "../../utils";
 import Article from "../../components/Article";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const Blogs = (props) => {
   return (
