@@ -1,10 +1,10 @@
-import React from "react";
-import WelcomeLogo from "../../assets/images/welcome-logo.svg";
-import YouTube from "../../assets/images/youtube.svg";
-import Twitter from "../../assets/images/twitter.svg";
-import LinkedIn from "../../assets/images/linkedin.svg";
-import { Image, Layout, Typography } from "antd";
-import { solutionsList } from "../../utils/index";
+import React from 'react';
+import WelcomeLogo from '../../assets/images/welcome-logo.svg';
+import YouTube from '../../assets/images/youtube.svg';
+import Twitter from '../../assets/images/twitter.svg';
+import LinkedIn from '../../assets/images/linkedin.svg';
+import { Image, Layout, Typography } from 'antd';
+import { solutionsList } from '../../utils/index';
 
 const { Text } = Typography;
 
@@ -24,7 +24,7 @@ const SolutionsList = ({ title, solutions }) => {
 const Footer = (props) => {
   return (
     <Layout.Footer className="footer w-full md:w-auto bg-black p-0">
-      <div className="px-20 pt-28 pb-48 grid grid-rows-2 md:grid-rows-1 md:grid-flow-col text-white">
+      <div className="px-8 md:px-20 pt-16 md:pt-28 pb-16 md:pb-48 grid grid-rows-2 md:grid-rows-1 md:grid-flow-col text-white">
         <Image
           preview={false}
           src={WelcomeLogo}
@@ -38,7 +38,7 @@ const Footer = (props) => {
         </div>
       </div>
 
-      <div className="px-20 py-7 flex flex-col gap-4 md:gap-0 md:flex-row justify-between items-center">
+      <div className="px-8 md:px-20 py-7 flex flex-col gap-4 md:gap-0 md:flex-row justify-between items-center">
         <Text className="text-white/[.65] order-last md:order-first">
           © 2022 Welcome. All right reserved.
         </Text>

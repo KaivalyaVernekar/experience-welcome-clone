@@ -1,19 +1,16 @@
-import React from "react";
-import { Space, Typography, Divider } from "antd";
-import Label from "../../components/Label";
-import { useMediaQuery } from "react-responsive";
+import React from 'react';
+import { Space, Typography, Divider } from 'antd';
+import Label from '../../components/Label';
 
-import CountUp from "../../components/CountUpAnimator";
-import revenue from "../../assets/images/revenue.svg";
+import CountUp from '../../components/CountUpAnimator';
+import revenue from '../../assets/images/revenue.svg';
 
 const { Title, Text } = Typography;
 
 const Revenue = (props) => {
-  const isLarge = useMediaQuery({ minWidth: 1024 });
-
   return (
-    <div className="px-20 py-36 bg-[#F5F5F5]" {...props}>
-      <div className="flex flex-col lg:flex-row justify-between gap-16 lg:items-center">
+    <div className="px-8 py-12 md:px-20 md:py-36 bg-[#F5F5F5]" {...props}>
+      <div className="flex flex-col md:flex-row justify-between gap-16 md:items-center">
         <div>
           <Title className="m-0 md:text-6xl lg:text-7xl xl:text-8xl">
             Drive
@@ -30,15 +27,7 @@ const Revenue = (props) => {
           </div>
         </div>
         <div>
-          <Space
-            direction={isLarge ? "vertical" : "horizontal"}
-            split={
-              <Divider
-                type={isLarge ? "horizontal" : "vertical"}
-                className={!isLarge && "h-[100px]"}
-              />
-            }
-          >
+          <Space direction={'vertical'} split={<Divider type={'horizontal'} />}>
             <Label
               title={
                 <Title className="m-0 text-2xl sm:text-3xl md:text-4xl">

@@ -1,6 +1,6 @@
-import React from "react";
-import { Button, Card, Image, Typography } from "antd";
-import Label from "./Label";
+import React from 'react';
+import { Button, Card, Image, Typography } from 'antd';
+import Label from './Label';
 
 const { Text } = Typography;
 
@@ -13,7 +13,9 @@ const Article = (props) => {
       {...restProps}
     >
       <Label label={<Text>{label}</Text>} title={<Text ellipsis>{title}</Text>}>
-        <Button type="link">{action}</Button>
+        <Button type="link" className="p-0">
+          {action}
+        </Button>
       </Label>
     </Card>
   );

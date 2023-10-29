@@ -1,10 +1,10 @@
-import React from "react";
-import { Col, Row, Typography } from "antd";
-import Label from "../../components/Label";
-import { svgs } from "../../utils";
-import CountUp from "../../components/CountUpAnimator";
-import InfiniteScroller from "../../components/InfiniteScroller";
-import Hero from "./hero";
+import React from 'react';
+import { Col, Row, Typography } from 'antd';
+import Label from '../../components/Label';
+import { svgs } from '../../utils';
+import CountUp from '../../components/CountUpAnimator';
+import InfiniteScroller from '../../components/InfiniteScroller';
+import Hero from './hero';
 
 const { Title, Text } = Typography;
 
@@ -12,7 +12,7 @@ const HeroSection = (props) => {
   return (
     <>
       <Hero />
-      <div className="px-20 bg-black hidden lg:block">
+      <div className="px-8 md:px-20 bg-black hidden lg:block">
         <Row gutter={[64, 16]} justify="space-between" align="middle">
           <Col lg={12} md={24} sm={24} xs={24} className="py-20">
             <Label
@@ -31,7 +31,7 @@ const HeroSection = (props) => {
             <Label
               title={
                 <Title className="m-0 text-white">
-                  +<CountUp value={66} />%{" "}
+                  +<CountUp value={66} />%{' '}
                   <Text className="text-white/[0.65]">attendance rate</Text>
                 </Title>
               }

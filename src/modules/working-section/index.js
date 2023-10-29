@@ -1,8 +1,8 @@
-import React from "react";
-import { Button, Col, Image, Row, Typography } from "antd";
-import Label from "../../components/Label";
+import React from 'react';
+import { Button, Col, Image, Row, Typography } from 'antd';
+import Label from '../../components/Label';
 
-import { workingSteps } from "../../utils";
+import { workingSteps } from '../../utils';
 
 const { Title, Text } = Typography;
 
@@ -13,7 +13,7 @@ const ListItem = (props) => {
       align="middle"
       justify="space-between"
       className="py-10 border-t-1 border-black/[.10]"
-      style={{ borderTop: "1px solid" }}
+      style={{ borderTop: '1px solid' }}
     >
       <Col lg={10} md={12} sm={24} xs={22}>
         <Label
@@ -22,7 +22,7 @@ const ListItem = (props) => {
           description={<Text>{props.description}</Text>}
         />
       </Col>
-      <Col lg={14} md={12} sm={24} xs={22}>
+      <Col lg={14} md={12} sm={24} xs={24}>
         <Image
           src={props.src}
           alt={props.alt}
@@ -36,8 +36,12 @@ const ListItem = (props) => {
 
 const Working = (props) => {
   return (
-    <div className="px-20 py-36" {...props}>
-      <Row gutter={[200, 16]} className="mb-20" justify="space-between">
+    <div className="px-8 py-12 md:px-20 md:py-36" {...props}>
+      <Row
+        gutter={[200, 16]}
+        className="mb-10 md:mb-20"
+        justify="space-between"
+      >
         <Col lg={12} md={24} sm={24} xs={24}>
           <Title className="m-0 text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             How it works

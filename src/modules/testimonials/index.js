@@ -1,8 +1,8 @@
-import React from "react";
-import { Typography, Carousel } from "antd";
+import React from 'react';
+import { Typography, Carousel } from 'antd';
 
-import { testimonials } from "../../utils/index";
-import TestimonialCard from "../../components/TestimonialCard";
+import { testimonials } from '../../utils/index';
+import TestimonialCard from '../../components/TestimonialCard';
 
 const { Title } = Typography;
 
@@ -23,7 +23,7 @@ const Testimonials = (props) => {
 
   return (
     <div
-      className="px-20 py-36 bg-testimonials-pattern bg-cover bg-no-repeat text-white"
+      className="px-8 py-12 md:px-20 md:py-36 bg-testimonials-pattern bg-cover bg-no-repeat text-white"
       {...props}
     >
       <div className="flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-0 mb-16 md:mb-24">
@@ -37,7 +37,7 @@ const Testimonials = (props) => {
       </div>
       <Carousel className="block lg:hidden" autoplay>
         {getTestimonialList({
-          className: "w-full overflow-hidden flex items-center",
+          className: 'w-full overflow-hidden flex items-center',
         })}
       </Carousel>
     </div>
