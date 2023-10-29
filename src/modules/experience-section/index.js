@@ -1,7 +1,7 @@
-import React from "react";
-import { Button, Image, Row, Typography } from "antd";
-import { experiences } from "../../utils";
-import InfiniteScroller from "../../components/InfiniteScroller";
+import React from 'react';
+import { Button, Image, Row, Typography } from 'antd';
+import { experiences } from '../../utils';
+import InfiniteScroller from '../../components/InfiniteScroller';
 
 const { Title, Text } = Typography;
 
@@ -33,7 +33,7 @@ const Experience = (props) => {
                 src={item.src}
                 alt={item.alt}
                 preview={false}
-                className="rounded-full max-w-sm 2xl:max-w-md"
+                className="rounded-full max-w-xs md:max-w-sm 2xl:max-w-md"
               />
             </div>
           ))}
@@ -51,7 +51,7 @@ const Experience = (props) => {
                 src={item.src}
                 alt={item.alt}
                 preview={false}
-                className="rounded-full max-w-sm 2xl:max-w-md"
+                className="rounded-full max-w-xs md:max-w-sm 2xl:max-w-md"
               />
             </div>
           ))}
